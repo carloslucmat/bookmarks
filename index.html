@@ -109,39 +109,130 @@
             let currentArticle = null;
             
             for (let line of lines) {
+                const originalLine = line;
                 line = line.trim();
                 
                 // Skip empty lines and headers
                 if (!line || line.startsWith('#')) continue;
                 
-                // Check if line starts with a link
-                const linkMatch = line.match(/^\[(.+?)\]\((.+?)\)(.*)$/);
+                let linkMatch = null;
+                let title = '';
+                let url = '';
+                let description = '';
+                
+                // Format 1: [Title](URL) Description
+                linkMatch = line.match(/^\[(.+?)\]\((.+?)\)(.*)$/);
                 if (linkMatch) {
+                    title = linkMatch[1];
+                    url = linkMatch[2];
+                    description = linkMatch[3].trim();
+                }
+                
+                // Format 2: - [Title](URL) Description (bullet point)
+                if (!linkMatch) {
+                    linkMatch = line.match(/^[-*+]\s*\[(.+?)\]\((.+?)\)(.*)$/);
+                    if (linkMatch) {
+                        title = linkMatch[1];
+                        url = linkMatch[2];
+                        description = linkMatch[3].trim();
+                    }
+                }
+                
+                // Format 3: ## [Title](URL) (heading style)
+                if (!linkMatch) {
+                    linkMatch = line.match(/^#+\s*\[(.+?)\]\((.+?)\)(.*)$/);
+                    if (linkMatch) {
+                        title = linkMatch[1];
+                        url = linkMatch[2];
+                        description = linkMatch[3].trim();
+                    }
+                }
+                
+                // Format 4: Plain URL with title after
+                if (!linkMatch) {
+                    linkMatch = line.match(/^(https?:\/\/[^\s]+)\s*[-–—]\s*(.+)$/);
+                    if (linkMatch) {
+                        url = linkMatch[1];
+                        title = linkMatch[2];
+                        description = '';
+                    }
+                }
+                
+                // Format 5: Plain URL only
+                if (!linkMatch) {
+                    linkMatch = line.match(/^(https?:\/\/[^\s]+)$/);
+                    if (linkMatch) {
+                        url = linkMatch[1];
+                        // Extract title from URL
+                        try {
+                            const urlObj = new URL(url);
+                            title = urlObj.hostname + urlObj.pathname;
+                        } catch {
+                            title = url;
+                        }
+                        description = '';
+                    }
+                }
+                
+                // Format 6: Title - URL
+                if (!linkMatch) {
+                    linkMatch = line.match(/^(.+?)\s*[-–—]\s*(https?:\/\/[^\s]+)(.*)$/);
+                    if (linkMatch) {
+                        title = linkMatch[1].trim();
+                        url = linkMatch[2];
+                        description = linkMatch[3].trim();
+                    }
+                }
+                
+                // Format 7: HTML link
+                if (!linkMatch) {
+                    linkMatch = line.match(/^<a[^>]*href=["']([^"']+)["'][^>]*>([^<]+)<\/a>(.*)$/i);
+                    if (linkMatch) {
+                        url = linkMatch[1];
+                        title = linkMatch[2];
+                        description = linkMatch[3].trim();
+                    }
+                }
+                
+                if (linkMatch && title && url) {
                     // Save previous article if exists
                     if (currentArticle) {
                         articles.push(currentArticle);
                     }
                     
+                    // Clean up description (remove leading dashes, colons, etc.)
+                    description = description.replace(/^[-–—:]\s*/, '');
+                    
                     // Start new article
                     currentArticle = {
-                        title: linkMatch[1],
-                        url: linkMatch[2],
-                        description: linkMatch[3].trim(),
+                        title: title,
+                        url: url,
+                        description: description,
                         tags: [],
                         date: null
                     };
                 } else if (currentArticle) {
-                    // Check for tags line
-                    if (line.startsWith('Tags:') || line.startsWith('tags:')) {
-                        const tagsText = line.substring(5).trim();
-                        currentArticle.tags = tagsText.split(',').map(tag => tag.trim()).filter(tag => tag);
+                    // Check for tags line (various formats)
+                    if (line.match(/^(tags?|Topics?|Categories|Labels?):\s*/i)) {
+                        const tagsText = line.replace(/^[^:]+:\s*/i, '');
+                        // Split by comma, semicolon, or hashtag
+                        currentArticle.tags = tagsText.split(/[,;]|(?=#)/)
+                            .map(tag => tag.replace(/^#/, '').trim())
+                            .filter(tag => tag);
                     }
-                    // Check for date line
-                    else if (line.startsWith('Date:') || line.startsWith('date:')) {
-                        currentArticle.date = line.substring(5).trim();
+                    // Check for date line (various formats)
+                    else if (line.match(/^(date|added|created|saved):\s*/i)) {
+                        currentArticle.date = line.replace(/^[^:]+:\s*/i, '');
+                    }
+                    // Check for hashtag-style tags on their own line
+                    else if (line.match(/^#\w/)) {
+                        const hashTags = line.match(/#\w+/g) || [];
+                        currentArticle.tags = currentArticle.tags.concat(
+                            hashTags.map(tag => tag.substring(1))
+                        );
                     }
                     // Additional description
-                    else if (line && !line.startsWith('---')) {
+                    else if (line && !line.startsWith('---') && !line.startsWith('===')) {
                         if (currentArticle.description) {
                             currentArticle.description += ' ' + line;
                         } else {
