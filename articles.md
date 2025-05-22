@@ -1,61 +1,70 @@
-# My Reading List
+# My Read Later Articles
 
-<!-- This is your reading list file. Edit this file to manage your articles. -->
-<!-- The app supports multiple formats - use whichever is most convenient for you -->
+## Standard Markdown Links
+[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - A comprehensive guide to command line mastery
+Date: 2024-05-22
+Tags: programming, cli, unix, productivity
 
-## Web Development Resources
+[Hacker News](https://news.ycombinator.com) 
+Social news website focusing on computer science and entrepreneurship
+Tags: news, technology, programming
 
-[Learn Web Development](https://web.dev/learn/)
-A comprehensive guide to modern web development practices and techniques.
-Tags: web, development, learning
-Status: unread
+## Bullet Point Lists
+- [Mozilla Developer Network](https://developer.mozilla.org/) - Web development documentation and resources
+  Date: 2024-05-21
+  Tags: web development, documentation, reference
 
-## GitHub Features Overview
+* [A List Apart](https://alistapart.com/) Web design and UX articles
+  Tags: design, web development, ux
 
-URL: https://github.com/features
-**Description:** Explore the powerful features that make GitHub the leading platform for developers.
-**Tags:** github, development, tools
-**Status:** read
+## Plain URLs
+https://www.joelonsoftware.com/ - Essays on software development and management
+Date: 2024-05-20
+Tags: programming, management, essays
 
-## Simple Links Format
+https://lobste.rs/
+#social #programming #news
 
-[CSS-Tricks](https://css-tricks.com/)
+## Title - URL Format
+CSS Tricks - https://css-tricks.com/
+Great resource for CSS tutorials and tips
+Tags: css, web development, tutorials
 
-[MDN Web Docs](https://developer.mozilla.org/)
+## Heading Style Links
+### [GitHub](https://github.com) - Code hosting platform
+Topics: development, git, collaboration
 
-[JavaScript Info](https://javascript.info/)
+## HTML Links
+<a href="https://stackoverflow.com/">Stack Overflow</a> - Programming Q&A site
+Categories: programming, help, community
 
-## Plain URLs (will use URL as title)
+## Various Tag Formats
+[Example with hashtags](https://example.com)
+#example #tutorial #reference
 
-https://stackoverflow.com/
+[Another example](https://example2.com) 
+Topics: machine learning, AI
+Added: 2024-05-22
 
-https://codepen.io/
+---
 
-https://github.com/
+## Supported Formats:
 
-## Detailed Articles
+1. **Standard**: `[Title](URL) Description`
+2. **Bullets**: `- [Title](URL) Description`  
+3. **Plain URL**: `https://example.com - Title`
+4. **URL only**: `https://example.com`
+5. **Title first**: `Title - https://example.com`
+6. **Headings**: `## [Title](URL) Description`
+7. **HTML**: `<a href="URL">Title</a> Description`
 
-### Advanced React Patterns
-**URL:** https://reactjs.org/docs/
-**Description:** Learn advanced React patterns and best practices for building scalable applications.
-**Tags:** react, javascript, frontend, patterns
-**Status:** archived
+## Tag Formats:
+- `Tags: tag1, tag2, tag3`
+- `Topics: topic1; topic2`
+- `#hashtag #style #tags`
+- `Categories: cat1, cat2`
 
-### Understanding CSS Grid
-**URL:** https://css-tricks.com/snippets/css/complete-guide-grid/
-**Description:** Complete guide to CSS Grid layout system with examples and explanations.
-**Tags:** css, grid, layout, design
-**Status:** unread
-
-<!-- 
-Supported formats:
-1. [Title](URL) - Simple markdown links
-2. Plain URLs - Will use URL as title
-3. ## Title with optional fields below:
-   - **URL:** or URL:
-   - **Description:** or Description:
-   - **Tags:** or Tags: (comma separated)
-   - **Status:** or Status: (unread/read/archived)
-
-You can mix and match these formats as needed!
--->
+## Date Formats:
+- `Date: 2024-05-22`
+- `Added: May 22, 2024`
+- `Created: 2024-05-22`
