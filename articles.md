@@ -12,7 +12,7 @@ Status: unread
 
 ## GitHub Features Overview
 
-**URL:** https://github.com/features
+URL: https://github.com/features
 **Description:** Explore the powerful features that make GitHub the leading platform for developers.
 **Tags:** github, development, tools
 **Status:** read
@@ -20,13 +20,17 @@ Status: unread
 ## Simple Links Format
 
 [CSS-Tricks](https://css-tricks.com/)
+
 [MDN Web Docs](https://developer.mozilla.org/)
+
 [JavaScript Info](https://javascript.info/)
 
 ## Plain URLs (will use URL as title)
 
 https://stackoverflow.com/
+
 https://codepen.io/
+
 https://github.com/
 
 ## Detailed Articles
