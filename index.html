@@ -14,8 +14,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #e4e4e7;
+            background: #0a0a0a;
             min-height: 100vh;
         }
 
@@ -28,305 +28,340 @@
         .header {
             text-align: center;
             margin-bottom: 40px;
-            color: white;
+            color: #f4f4f5;
         }
 
         .header h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: 600;
         }
 
         .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1rem;
+            opacity: 0.7;
+            color: #a1a1aa;
         }
 
         .add-form {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .info-box {
+            background: #1e3a8a;
+            border: 1px solid #3b82f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+            color: #bfdbfe;
+        }
+
+        .info-box h3 {
+            color: #dbeafe;
+            margin-bottom: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .info-box code {
+            background: #1e40af;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #555;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #f4f4f5;
+            font-size: 14px;
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 12px 16px;
-            border: 2px solid #e1e5e9;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            background: white;
+            padding: 10px 12px;
+            border: 1px solid #3f3f46;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+            background: #0a0a0a;
+            color: #e4e4e7;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #6366f1;
         }
 
         .form-group textarea {
-            height: 100px;
+            height: 80px;
             resize: vertical;
         }
 
         .btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #6366f1;
             color: white;
-            padding: 12px 30px;
+            padding: 10px 20px;
             border: none;
-            border-radius: 25px;
-            font-size: 16px;
-            font-weight: 600;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            transition: background-color 0.2s ease;
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            background: #5856eb;
         }
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
         }
 
         .stat-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            border-radius: 15px;
+            background: #18181b;
+            border: 1px solid #27272a;
+            padding: 16px;
+            border-radius: 8px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #f4f4f5;
+            margin-bottom: 4px;
         }
 
         .stat-label {
-            color: #666;
+            color: #a1a1aa;
+            font-size: 12px;
             font-weight: 500;
         }
 
         .articles-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
         }
 
         .article-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .article-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 8px;
+            padding: 20px;
+            transition: border-color 0.2s ease;
         }
 
         .article-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: #3f3f46;
         }
 
         .article-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: #333;
-            line-height: 1.3;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #f4f4f5;
+            line-height: 1.4;
         }
 
         .article-title a {
             color: inherit;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.2s ease;
         }
 
         .article-title a:hover {
-            color: #667eea;
+            color: #6366f1;
         }
 
         .article-description {
-            color: #666;
-            margin-bottom: 15px;
+            color: #a1a1aa;
+            margin-bottom: 12px;
             line-height: 1.5;
+            font-size: 14px;
         }
 
         .article-meta {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 15px;
+            font-size: 12px;
+            color: #71717a;
+            margin-bottom: 12px;
         }
 
         .article-date {
-            background: #f8f9fa;
-            padding: 4px 12px;
-            border-radius: 15px;
+            background: #27272a;
+            padding: 2px 8px;
+            border-radius: 4px;
             font-weight: 500;
         }
 
         .article-actions {
             display: flex;
-            gap: 10px;
+            gap: 8px;
         }
 
         .btn-small {
-            padding: 6px 15px;
-            font-size: 14px;
-            border-radius: 15px;
+            padding: 4px 12px;
+            font-size: 12px;
+            border-radius: 4px;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: background-color 0.2s ease;
             font-weight: 500;
+            border: none;
+            cursor: pointer;
         }
 
         .btn-read {
-            background: #28a745;
+            background: #16a34a;
             color: white;
         }
 
         .btn-read:hover {
-            background: #218838;
-            transform: translateY(-1px);
+            background: #15803d;
         }
 
         .btn-archive {
-            background: #ffc107;
-            color: #333;
+            background: #d97706;
+            color: white;
         }
 
         .btn-archive:hover {
-            background: #e0a800;
-            transform: translateY(-1px);
+            background: #b45309;
         }
 
         .btn-delete {
-            background: #dc3545;
+            background: #dc2626;
             color: white;
         }
 
         .btn-delete:hover {
-            background: #c82333;
-            transform: translateY(-1px);
+            background: #b91c1c;
         }
 
         .filters {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: #18181b;
+            border: 1px solid #27272a;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
         }
 
         .filter-buttons {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
         }
 
         .filter-btn {
-            padding: 8px 20px;
-            border: 2px solid #e1e5e9;
-            background: white;
-            border-radius: 20px;
+            padding: 6px 12px;
+            border: 1px solid #3f3f46;
+            background: #0a0a0a;
+            color: #a1a1aa;
+            border-radius: 4px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             font-weight: 500;
+            font-size: 12px;
         }
 
         .filter-btn.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #6366f1;
             color: white;
-            border-color: #667eea;
+            border-color: #6366f1;
+        }
+
+        .filter-btn:hover:not(.active) {
+            border-color: #52525b;
+            background: #18181b;
         }
 
         .search-box {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .search-box input {
             width: 100%;
-            padding: 12px 20px;
-            border: 2px solid #e1e5e9;
-            border-radius: 25px;
-            font-size: 16px;
-            transition: border-color 0.3s ease;
+            padding: 10px 12px;
+            border: 1px solid #3f3f46;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+            background: #0a0a0a;
+            color: #e4e4e7;
         }
 
         .search-box input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #6366f1;
+        }
+
+        .search-box input::placeholder {
+            color: #71717a;
         }
 
         .empty-state {
             text-align: center;
-            color: white;
+            color: #a1a1aa;
             margin: 60px 0;
         }
 
         .empty-state h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            opacity: 0.9;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #f4f4f5;
+            font-weight: 600;
         }
 
         .empty-state p {
-            font-size: 1.1rem;
-            opacity: 0.7;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📚 My Reading List</h1>
+            <h1>My Reading List</h1>
             <p>Your personal Pocket alternative - Save articles to read later</p>
         </div>
 
-        <div class="add-form">
-            <h2 style="margin-bottom: 20px; color: #333;">Add New Article</h2>
+        <div class="info-box">
+            <h3>📝 How to manage your articles</h3>
+            <p>Create an <code>articles.md</code> file in your repository with your reading list. The app will automatically load and display your articles.</p>
+            
+            <p><strong>Supported formats:</strong></p>
+            <p>• Simple links: <code>[Article Title](https://example.com)</code></p>
+            <p>• Plain URLs: <code>https://example.com</code></p>
+            <p>• Detailed format with headers like <code>## Article Title</code></p>
+            
+            <p>You can add optional fields like Status: read/unread/archived, Tags: tag1, tag2, and descriptions.</p>
+        </div>
+
+        <div class="add-form" style="display: none;">
+            <h2 style="margin-bottom: 16px; color: #f4f4f5; font-size: 1.25rem; font-weight: 600;">Add New Article</h2>
             <form id="addArticleForm">
                 <div class="form-group">
                     <label for="url">Article URL *</label>
@@ -344,7 +379,7 @@
                     <label for="tags">Tags</label>
                     <input type="text" id="tags" placeholder="tech, programming, design (comma separated)">
                 </div>
-                <button type="submit" class="btn">💾 Save Article</button>
+                <button type="submit" class="btn">Save Article</button>
             </form>
         </div>
 
@@ -369,7 +404,7 @@
 
         <div class="filters">
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="🔍 Search articles...">
+                <input type="text" id="searchInput" placeholder="Search articles...">
             </div>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All Articles</button>
@@ -388,32 +423,10 @@
     </div>
 
     <script>
-        // In-memory storage for articles
-        let articles = [
-            {
-                id: 1,
-                url: "https://web.dev/learn/",
-                title: "Learn Web Development",
-                description: "Comprehensive guide to modern web development practices and techniques.",
-                tags: ["web", "development", "learning"],
-                status: "unread",
-                dateAdded: "2024-05-22",
-                dateRead: null
-            },
-            {
-                id: 2,
-                url: "https://github.com/features",
-                title: "GitHub Features Overview",
-                description: "Explore the powerful features that make GitHub the leading platform for developers.",
-                tags: ["github", "development", "tools"],
-                status: "read",
-                dateAdded: "2024-05-21",
-                dateRead: "2024-05-22"
-            }
-        ];
-
+        // Articles loaded from articles.md file
+        let articles = [];
         let currentFilter = 'all';
-        let nextId = 3;
+        let nextId = 1;
 
         // DOM elements
         const addForm = document.getElementById('addArticleForm');
@@ -423,10 +436,138 @@
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
-            renderArticles();
-            updateStats();
+            loadArticlesFromFile();
             setupEventListeners();
         });
+
+        async function loadArticlesFromFile() {
+            try {
+                const response = await fetch('articles.md');
+                const markdown = await response.text();
+                articles = parseMarkdownToArticles(markdown);
+                renderArticles();
+                updateStats();
+            } catch (error) {
+                console.error('Error loading articles.md:', error);
+                // Show error message
+                articlesGrid.innerHTML = `
+                    <div class="empty-state">
+                        <h2>Could not load articles.md</h2>
+                        <p>Please make sure you have an articles.md file in your repository</p>
+                    </div>
+                `;
+            }
+        }
+
+        function parseMarkdownToArticles(markdown) {
+            const lines = markdown.split('\n');
+            const parsedArticles = [];
+            let currentArticle = null;
+            let id = 1;
+
+            for (let line of lines) {
+                line = line.trim();
+                
+                // Skip empty lines and comments
+                if (!line || line.startsWith('<!--')) continue;
+                
+                // New article starts with ## or ###
+                if (line.startsWith('## ') || line.startsWith('### ')) {
+                    if (currentArticle) {
+                        parsedArticles.push(currentArticle);
+                    }
+                    currentArticle = {
+                        id: id++,
+                        title: line.replace(/^#{2,3}\s+/, ''),
+                        url: '',
+                        description: '',
+                        tags: [],
+                        status: 'unread',
+                        dateAdded: new Date().toISOString().split('T')[0],
+                        dateRead: null
+                    };
+                }
+                // URL line
+                else if (line.startsWith('**URL:**') || line.startsWith('URL:')) {
+                    if (currentArticle) {
+                        const urlMatch = line.match(/https?:\/\/[^\s)]+/);
+                        if (urlMatch) {
+                            currentArticle.url = urlMatch[0];
+                        }
+                    }
+                }
+                // Direct markdown link format [title](url)
+                else if (line.match(/^\[.+\]\(.+\)$/)) {
+                    const match = line.match(/^\[(.+)\]\((.+)\)$/);
+                    if (match) {
+                        if (currentArticle) {
+                            parsedArticles.push(currentArticle);
+                        }
+                        currentArticle = {
+                            id: id++,
+                            title: match[1],
+                            url: match[2],
+                            description: '',
+                            tags: [],
+                            status: 'unread',
+                            dateAdded: new Date().toISOString().split('T')[0],
+                            dateRead: null
+                        };
+                    }
+                }
+                // Description
+                else if (line.startsWith('**Description:**') || line.startsWith('Description:')) {
+                    if (currentArticle) {
+                        currentArticle.description = line.replace(/^\*\*Description:\*\*\s*|^Description:\s*/, '');
+                    }
+                }
+                // Tags
+                else if (line.startsWith('**Tags:**') || line.startsWith('Tags:')) {
+                    if (currentArticle) {
+                        const tagsText = line.replace(/^\*\*Tags:\*\*\s*|^Tags:\s*/, '');
+                        currentArticle.tags = tagsText.split(',').map(tag => tag.trim()).filter(tag => tag);
+                    }
+                }
+                // Status
+                else if (line.startsWith('**Status:**') || line.startsWith('Status:')) {
+                    if (currentArticle) {
+                        const status = line.replace(/^\*\*Status:\*\*\s*|^Status:\s*/, '').toLowerCase();
+                        if (['unread', 'read', 'archived'].includes(status)) {
+                            currentArticle.status = status;
+                        }
+                    }
+                }
+                // Plain URL (if no current article, create one)
+                else if (line.match(/^https?:\/\//)) {
+                    if (currentArticle) {
+                        parsedArticles.push(currentArticle);
+                    }
+                    currentArticle = {
+                        id: id++,
+                        title: line,
+                        url: line,
+                        description: '',
+                        tags: [],
+                        status: 'unread',
+                        dateAdded: new Date().toISOString().split('T')[0],
+                        dateRead: null
+                    };
+                }
+                // Description text (if it's not a special field and we have a current article)
+                else if (currentArticle && line && !line.startsWith('**') && !line.startsWith('---')) {
+                    if (!currentArticle.description) {
+                        currentArticle.description = line;
+                    }
+                }
+            }
+            
+            // Don't forget the last article
+            if (currentArticle) {
+                parsedArticles.push(currentArticle);
+            }
+            
+            return parsedArticles;
+        }
 
         function setupEventListeners() {
             addForm.addEventListener('submit', handleAddArticle);
@@ -464,8 +605,8 @@
             // Show success animation
             const btn = addForm.querySelector('.btn');
             const originalText = btn.textContent;
-            btn.textContent = '✅ Added!';
-            btn.style.background = '#28a745';
+            btn.textContent = 'Added!';
+            btn.style.background = '#16a34a';
             setTimeout(() => {
                 btn.textContent = originalText;
                 btn.style.background = '';
@@ -528,8 +669,8 @@
                         <span class="status-badge status-${article.status}">${article.status.toUpperCase()}</span>
                     </div>
                     ${article.tags.length > 0 ? `
-                        <div style="margin-bottom: 15px;">
-                            ${article.tags.map(tag => `<span style="display: inline-block; background: #e9ecef; padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-right: 5px; margin-bottom: 5px;">${tag}</span>`).join('')}
+                        <div style="margin-bottom: 12px;">
+                            ${article.tags.map(tag => `<span style="display: inline-block; background: #27272a; color: #a1a1aa; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-right: 4px; margin-bottom: 4px;">${tag}</span>`).join('')}
                         </div>
                     ` : ''}
                     <div class="article-actions">
