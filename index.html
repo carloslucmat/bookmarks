@@ -3,746 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Reading List</title>
+    <title>Read Later</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            color: #e4e4e7;
-            background: #0a0a0a;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #f4f4f5;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .header p {
-            font-size: 1rem;
-            opacity: 0.7;
-            color: #a1a1aa;
-        }
-
-        .add-form {
-            background: #18181b;
-            border: 1px solid #27272a;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 32px;
-        }
-
-        .info-box {
-            background: #1e3a8a;
-            border: 1px solid #3b82f6;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 24px;
-            color: #bfdbfe;
-        }
-
-        .info-box h3 {
-            color: #dbeafe;
-            margin-bottom: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .info-box p {
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 8px;
-        }
-
-        .info-box code {
-            background: #1e40af;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-family: 'Courier New', monospace;
-            font-size: 13px;
-        }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 500;
-            color: #f4f4f5;
-            font-size: 14px;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #3f3f46;
-            border-radius: 6px;
-            font-size: 14px;
-            transition: border-color 0.2s ease;
-            background: #0a0a0a;
-            color: #e4e4e7;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #6366f1;
-        }
-
-        .form-group textarea {
-            height: 80px;
-            resize: vertical;
-        }
-
-        .btn {
-            background: #6366f1;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn:hover {
-            background: #5856eb;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 16px;
-            margin-bottom: 32px;
-        }
-
-        .stat-card {
-            background: #18181b;
-            border: 1px solid #27272a;
-            padding: 16px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #f4f4f5;
-            margin-bottom: 4px;
-        }
-
-        .stat-label {
-            color: #a1a1aa;
-            font-size: 12px;
-            font-weight: 500;
-        }
-
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 16px;
-        }
-
-        .article-card {
-            background: #18181b;
-            border: 1px solid #27272a;
-            border-radius: 8px;
-            padding: 20px;
-            transition: border-color 0.2s ease;
-        }
-
-        .article-card:hover {
-            border-color: #3f3f46;
-        }
-
-        .article-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #f4f4f5;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 11px;
+            margin: 20px;
+            background: #fff;
+            color: #333;
             line-height: 1.4;
         }
-
-        .article-title a {
-            color: inherit;
+        
+        h1 {
+            font-size: 16px;
+            margin: 0 0 20px 0;
+            font-weight: normal;
+        }
+        
+        .article {
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+        }
+        
+        .article-link {
+            color: #00c;
+            text-decoration: underline;
+            font-size: 11px;
+        }
+        
+        .article-link:visited {
+            color: #551a8b;
+        }
+        
+        .article-link:hover {
             text-decoration: none;
-            transition: color 0.2s ease;
         }
-
-        .article-title a:hover {
-            color: #6366f1;
-        }
-
+        
         .article-description {
-            color: #a1a1aa;
-            margin-bottom: 12px;
-            line-height: 1.5;
-            font-size: 14px;
+            color: #666;
+            margin: 2px 0;
+            font-size: 11px;
         }
-
-        .article-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 12px;
-            color: #71717a;
-            margin-bottom: 12px;
+        
+        .article-tags {
+            font-size: 10px;
+            color: #999;
         }
-
-        .article-date {
-            background: #27272a;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-
-        .article-actions {
-            display: flex;
-            gap: 8px;
-        }
-
-        .btn-small {
-            padding: 4px 12px;
-            font-size: 12px;
-            border-radius: 4px;
+        
+        .article-tags a {
+            color: #999;
             text-decoration: none;
-            transition: background-color 0.2s ease;
-            font-weight: 500;
-            border: none;
-            cursor: pointer;
+            margin-right: 8px;
         }
-
-        .btn-read {
-            background: #16a34a;
-            color: white;
+        
+        .article-tags a:hover {
+            text-decoration: underline;
         }
-
-        .btn-read:hover {
-            background: #15803d;
+        
+        .date {
+            color: #999;
+            font-size: 10px;
+            margin-right: 8px;
         }
-
-        .btn-archive {
-            background: #d97706;
-            color: white;
+        
+        .loading {
+            color: #666;
+            font-style: italic;
         }
-
-        .btn-archive:hover {
-            background: #b45309;
-        }
-
-        .btn-delete {
-            background: #dc2626;
-            color: white;
-        }
-
-        .btn-delete:hover {
-            background: #b91c1c;
-        }
-
-        .filters {
-            background: #18181b;
-            border: 1px solid #27272a;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 24px;
-        }
-
-        .filter-buttons {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 6px 12px;
-            border: 1px solid #3f3f46;
-            background: #0a0a0a;
-            color: #a1a1aa;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-weight: 500;
-            font-size: 12px;
-        }
-
-        .filter-btn.active {
-            background: #6366f1;
-            color: white;
-            border-color: #6366f1;
-        }
-
-        .filter-btn:hover:not(.active) {
-            border-color: #52525b;
-            background: #18181b;
-        }
-
-        .search-box {
-            margin-bottom: 16px;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #3f3f46;
-            border-radius: 6px;
-            font-size: 14px;
-            transition: border-color 0.2s ease;
-            background: #0a0a0a;
-            color: #e4e4e7;
-        }
-
-        .search-box input:focus {
-            outline: none;
-            border-color: #6366f1;
-        }
-
-        .search-box input::placeholder {
-            color: #71717a;
-        }
-
-        .empty-state {
-            text-align: center;
-            color: #a1a1aa;
-            margin: 60px 0;
-        }
-
-        .empty-state h2 {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-            color: #f4f4f5;
-            font-weight: 600;
-        }
-
-        .empty-state p {
-            font-size: 14px;
+        
+        .error {
+            color: #c00;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Bookmarks CLM</h1>
-            <p>cosas interesantes para guardar</p>
-        </div>
-
-        <div class="info-box">
-            <h3>cómo funciona</h3>
-            <p>Create an <code>articles.md</code> file in your repository with your reading list. The app will automatically load and display your articles.</p>
-            
-            <p><strong>Supported formats:</strong></p>
-            <p>• Simple links: <code>[Article Title](https://example.com)</code></p>
-            <p>• Plain URLs: <code>https://example.com</code></p>
-            <p>• Detailed format with headers like <code>## Article Title</code></p>
-            
-            <p>You can add optional fields like Status: read/unread/archived, Tags: tag1, tag2, and descriptions.</p>
-        </div>
-
-        <div class="add-form" style="display: none;">
-            <h2 style="margin-bottom: 16px; color: #f4f4f5; font-size: 1.25rem; font-weight: 600;">Add New Article</h2>
-            <form id="addArticleForm">
-                <div class="form-group">
-                    <label for="url">Article URL *</label>
-                    <input type="url" id="url" required placeholder="https://example.com/article">
-                </div>
-                <div class="form-group">
-                    <label for="title">Title *</label>
-                    <input type="text" id="title" required placeholder="Enter article title">
-                </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea id="description" placeholder="Brief description of the article"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="tags">Tags</label>
-                    <input type="text" id="tags" placeholder="tech, programming, design (comma separated)">
-                </div>
-                <button type="submit" class="btn">Save Article</button>
-            </form>
-        </div>
-
-        <div class="stats">
-            <div class="stat-card">
-                <div class="stat-number" id="totalCount">0</div>
-                <div class="stat-label">Total Articles</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="unreadCount">0</div>
-                <div class="stat-label">Unread</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="readCount">0</div>
-                <div class="stat-label">Read</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="archivedCount">0</div>
-                <div class="stat-label">Archived</div>
-            </div>
-        </div>
-
-        <div class="filters">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search articles...">
-            </div>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All Articles</button>
-                <button class="filter-btn" data-filter="unread">Unread</button>
-                <button class="filter-btn" data-filter="read">Read</button>
-                <button class="filter-btn" data-filter="archived">Archived</button>
-            </div>
-        </div>
-
-        <div class="articles-grid" id="articlesGrid">
-            <div class="empty-state">
-                <h2>No articles yet</h2>
-                <p>Start by adding your first article above!</p>
-            </div>
-        </div>
+    <h1>Read Later</h1>
+    <div id="articles">
+        <div class="loading">Loading articles...</div>
     </div>
 
     <script>
-        // Articles loaded from articles.md file
-        let articles = [];
-        let currentFilter = 'all';
-        let nextId = 1;
-
-        // DOM elements
-        const addForm = document.getElementById('addArticleForm');
-        const articlesGrid = document.getElementById('articlesGrid');
-        const searchInput = document.getElementById('searchInput');
-        const filterButtons = document.querySelectorAll('.filter-btn');
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            loadArticlesFromFile();
-            setupEventListeners();
-        });
-
-        async function loadArticlesFromFile() {
+        async function loadArticles() {
+            const articlesDiv = document.getElementById('articles');
+            
             try {
                 const response = await fetch('articles.md');
-                const markdown = await response.text();
-                articles = parseMarkdownToArticles(markdown);
-                renderArticles();
-                updateStats();
+                const text = await response.text();
+                
+                if (!response.ok) {
+                    throw new Error('Failed to load articles');
+                }
+                
+                const articles = parseMarkdown(text);
+                displayArticles(articles);
+                
             } catch (error) {
-                console.error('Error loading articles.md:', error);
-                // Show error message
-                articlesGrid.innerHTML = `
-                    <div class="empty-state">
-                        <h2>Could not load articles.md</h2>
-                        <p>Please make sure you have an articles.md file in your repository</p>
-                    </div>
-                `;
+                articlesDiv.innerHTML = '<div class="error">Error loading articles. Make sure articles.md exists in your repository.</div>';
             }
         }
-
-        function parseMarkdownToArticles(markdown) {
-            const lines = markdown.split('\n');
-            const parsedArticles = [];
+        
+        function parseMarkdown(text) {
+            const articles = [];
+            const lines = text.split('\n');
             let currentArticle = null;
-            let id = 1;
-
+            
             for (let line of lines) {
                 line = line.trim();
                 
-                // Skip empty lines and comments
-                if (!line || line.startsWith('<!--')) continue;
+                // Skip empty lines and headers
+                if (!line || line.startsWith('#')) continue;
                 
-                // New article starts with ## or ###
-                if (line.startsWith('## ') || line.startsWith('### ')) {
+                // Check if line starts with a link
+                const linkMatch = line.match(/^\[(.+?)\]\((.+?)\)(.*)$/);
+                if (linkMatch) {
+                    // Save previous article if exists
                     if (currentArticle) {
-                        parsedArticles.push(currentArticle);
+                        articles.push(currentArticle);
                     }
+                    
+                    // Start new article
                     currentArticle = {
-                        id: id++,
-                        title: line.replace(/^#{2,3}\s+/, ''),
-                        url: '',
-                        description: '',
+                        title: linkMatch[1],
+                        url: linkMatch[2],
+                        description: linkMatch[3].trim(),
                         tags: [],
-                        status: 'unread',
-                        dateAdded: new Date().toISOString().split('T')[0],
-                        dateRead: null
+                        date: null
                     };
-                }
-                // URL line
-                else if (line.startsWith('**URL:**') || line.startsWith('URL:')) {
-                    if (currentArticle) {
-                        const urlMatch = line.match(/https?:\/\/[^\s)]+/);
-                        if (urlMatch) {
-                            currentArticle.url = urlMatch[0];
-                        }
-                    }
-                }
-                // Direct markdown link format [title](url)
-                else if (line.match(/^\[.+\]\(.+\)$/)) {
-                    const match = line.match(/^\[(.+)\]\((.+)\)$/);
-                    if (match) {
-                        if (currentArticle) {
-                            parsedArticles.push(currentArticle);
-                        }
-                        currentArticle = {
-                            id: id++,
-                            title: match[1],
-                            url: match[2],
-                            description: '',
-                            tags: [],
-                            status: 'unread',
-                            dateAdded: new Date().toISOString().split('T')[0],
-                            dateRead: null
-                        };
-                    }
-                }
-                // Description
-                else if (line.startsWith('**Description:**') || line.startsWith('Description:')) {
-                    if (currentArticle) {
-                        currentArticle.description = line.replace(/^\*\*Description:\*\*\s*|^Description:\s*/, '');
-                    }
-                }
-                // Tags
-                else if (line.startsWith('**Tags:**') || line.startsWith('Tags:')) {
-                    if (currentArticle) {
-                        const tagsText = line.replace(/^\*\*Tags:\*\*\s*|^Tags:\s*/, '');
+                } else if (currentArticle) {
+                    // Check for tags line
+                    if (line.startsWith('Tags:') || line.startsWith('tags:')) {
+                        const tagsText = line.substring(5).trim();
                         currentArticle.tags = tagsText.split(',').map(tag => tag.trim()).filter(tag => tag);
                     }
-                }
-                // Status
-                else if (line.startsWith('**Status:**') || line.startsWith('Status:')) {
-                    if (currentArticle) {
-                        const status = line.replace(/^\*\*Status:\*\*\s*|^Status:\s*/, '').toLowerCase();
-                        if (['unread', 'read', 'archived'].includes(status)) {
-                            currentArticle.status = status;
+                    // Check for date line
+                    else if (line.startsWith('Date:') || line.startsWith('date:')) {
+                        currentArticle.date = line.substring(5).trim();
+                    }
+                    // Additional description
+                    else if (line && !line.startsWith('---')) {
+                        if (currentArticle.description) {
+                            currentArticle.description += ' ' + line;
+                        } else {
+                            currentArticle.description = line;
                         }
-                    }
-                }
-                // Plain URL (if no current article, create one)
-                else if (line.match(/^https?:\/\//)) {
-                    if (currentArticle) {
-                        parsedArticles.push(currentArticle);
-                    }
-                    currentArticle = {
-                        id: id++,
-                        title: line,
-                        url: line,
-                        description: '',
-                        tags: [],
-                        status: 'unread',
-                        dateAdded: new Date().toISOString().split('T')[0],
-                        dateRead: null
-                    };
-                }
-                // Description text (if it's not a special field and we have a current article)
-                else if (currentArticle && line && !line.startsWith('**') && !line.startsWith('---')) {
-                    if (!currentArticle.description) {
-                        currentArticle.description = line;
                     }
                 }
             }
             
             // Don't forget the last article
             if (currentArticle) {
-                parsedArticles.push(currentArticle);
+                articles.push(currentArticle);
             }
             
-            return parsedArticles;
+            return articles;
         }
-
-        function setupEventListeners() {
-            addForm.addEventListener('submit', handleAddArticle);
-            searchInput.addEventListener('input', handleSearch);
+        
+        function displayArticles(articles) {
+            const articlesDiv = document.getElementById('articles');
             
-            filterButtons.forEach(btn => {
-                btn.addEventListener('click', handleFilterChange);
-            });
-        }
-
-        function handleAddArticle(e) {
-            e.preventDefault();
-            
-            const url = document.getElementById('url').value;
-            const title = document.getElementById('title').value;
-            const description = document.getElementById('description').value;
-            const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim()).filter(tag => tag);
-
-            const newArticle = {
-                id: nextId++,
-                url: url,
-                title: title,
-                description: description,
-                tags: tags,
-                status: 'unread',
-                dateAdded: new Date().toISOString().split('T')[0],
-                dateRead: null
-            };
-
-            articles.unshift(newArticle);
-            addForm.reset();
-            renderArticles();
-            updateStats();
-            
-            // Show success animation
-            const btn = addForm.querySelector('.btn');
-            const originalText = btn.textContent;
-            btn.textContent = 'Added!';
-            btn.style.background = '#16a34a';
-            setTimeout(() => {
-                btn.textContent = originalText;
-                btn.style.background = '';
-            }, 2000);
-        }
-
-        function handleSearch() {
-            renderArticles();
-        }
-
-        function handleFilterChange(e) {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            e.target.classList.add('active');
-            currentFilter = e.target.getAttribute('data-filter');
-            renderArticles();
-        }
-
-        function getFilteredArticles() {
-            let filtered = articles;
-            
-            // Apply status filter
-            if (currentFilter !== 'all') {
-                filtered = filtered.filter(article => article.status === currentFilter);
-            }
-            
-            // Apply search filter
-            const searchTerm = searchInput.value.toLowerCase();
-            if (searchTerm) {
-                filtered = filtered.filter(article => 
-                    article.title.toLowerCase().includes(searchTerm) ||
-                    article.description.toLowerCase().includes(searchTerm) ||
-                    article.tags.some(tag => tag.toLowerCase().includes(searchTerm))
-                );
-            }
-            
-            return filtered;
-        }
-
-        function renderArticles() {
-            const filteredArticles = getFilteredArticles();
-            
-            if (filteredArticles.length === 0) {
-                articlesGrid.innerHTML = `
-                    <div class="empty-state">
-                        <h2>No articles found</h2>
-                        <p>Try adjusting your search or filter criteria</p>
-                    </div>
-                `;
+            if (articles.length === 0) {
+                articlesDiv.innerHTML = '<div class="error">No articles found. Add some links to your articles.md file!</div>';
                 return;
             }
             
-            articlesGrid.innerHTML = filteredArticles.map(article => `
-                <div class="article-card">
-                    <h3 class="article-title">
-                        <a href="${article.url}" target="_blank" rel="noopener">${article.title}</a>
-                    </h3>
-                    <p class="article-description">${article.description}</p>
-                    <div class="article-meta">
-                        <span class="article-date">Added: ${formatDate(article.dateAdded)}</span>
-                        <span class="status-badge status-${article.status}">${article.status.toUpperCase()}</span>
-                    </div>
-                    ${article.tags.length > 0 ? `
-                        <div style="margin-bottom: 12px;">
-                            ${article.tags.map(tag => `<span style="display: inline-block; background: #27272a; color: #a1a1aa; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-right: 4px; margin-bottom: 4px;">${tag}</span>`).join('')}
-                        </div>
-                    ` : ''}
-                    <div class="article-actions">
-                        <a href="${article.url}" target="_blank" class="btn-small btn-read">Read</a>
-                        <button class="btn-small ${article.status === 'read' ? 'btn-archive' : 'btn-read'}" onclick="toggleStatus(${article.id})">
-                            ${article.status === 'read' ? 'Archive' : 'Mark Read'}
-                        </button>
-                        <button class="btn-small btn-delete" onclick="deleteArticle(${article.id})">Delete</button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function toggleStatus(id) {
-            const article = articles.find(a => a.id === id);
-            if (article) {
-                if (article.status === 'unread') {
-                    article.status = 'read';
-                    article.dateRead = new Date().toISOString().split('T')[0];
-                } else if (article.status === 'read') {
-                    article.status = 'archived';
-                } else {
-                    article.status = 'unread';
-                    article.dateRead = null;
+            let html = '';
+            for (let article of articles) {
+                html += '<div class="article">';
+                
+                // Date
+                if (article.date) {
+                    html += `<span class="date">${article.date}</span>`;
                 }
-                renderArticles();
-                updateStats();
+                
+                // Link
+                html += `<a href="${article.url}" class="article-link" target="_blank">${article.title}</a><br>`;
+                
+                // Description
+                if (article.description) {
+                    html += `<div class="article-description">${article.description}</div>`;
+                }
+                
+                // Tags
+                if (article.tags.length > 0) {
+                    html += '<div class="article-tags">';
+                    for (let tag of article.tags) {
+                        html += `<a href="#" onclick="filterByTag('${tag}')">${tag}</a>`;
+                    }
+                    html += '</div>';
+                }
+                
+                html += '</div>';
             }
+            
+            articlesDiv.innerHTML = html;
         }
-
-        function deleteArticle(id) {
-            if (confirm('Are you sure you want to delete this article?')) {
-                articles = articles.filter(a => a.id !== id);
-                renderArticles();
-                updateStats();
-            }
+        
+        function filterByTag(tag) {
+            // Simple tag filtering - you can enhance this
+            alert(`Filtering by tag: ${tag} (feature not implemented yet)`);
         }
-
-        function updateStats() {
-            const total = articles.length;
-            const unread = articles.filter(a => a.status === 'unread').length;
-            const read = articles.filter(a => a.status === 'read').length;
-            const archived = articles.filter(a => a.status === 'archived').length;
-
-            document.getElementById('totalCount').textContent = total;
-            document.getElementById('unreadCount').textContent = unread;
-            document.getElementById('readCount').textContent = read;
-            document.getElementById('archivedCount').textContent = archived;
-        }
-
-        function formatDate(dateString) {
-            const date = new Date(dateString);
-            return date.toLocaleDateString('en-US', { 
-                month: 'short', 
-                day: 'numeric', 
-                year: 'numeric' 
-            });
-        }
-
-        // Export articles as JSON (for manual backup)
-        function exportArticles() {
-            const dataStr = JSON.stringify(articles, null, 2);
-            const dataBlob = new Blob([dataStr], {type: 'application/json'});
-            const url = URL.createObjectURL(dataBlob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'reading-list-backup.json';
-            link.click();
-        }
-
-        // Add export button functionality (you can add this to the header if needed)
-        console.log('To export your articles, run: exportArticles()');
+        
+        // Load articles when page loads
+        loadArticles();
     </script>
 </body>
 </html>
