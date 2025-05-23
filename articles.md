@@ -1,35 +1,68 @@
+## Catador de lixo por CLM
 - [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
+  
 - [Elysia Crampton: Beyond the horizon of coloniality | | Flash Art](https://flash---art.com/article/elysia-crampton-beyond-the-horizon-of-coloniality/)
+
 - [Elysia Crampton and the Art of Survival](https://www.vice.com/en/article/elysia-crampton-interview-demon-city/)
+
 - [Chuquimamani-Condori and Joshua Chuquimia Crampton: Q'iwanakaxa/Q'iwsanakaxa Utjxiwa (Cacique apoder](https://www.momaps1.org/en/programs/183-chuquimamani-condori-and-joshua-chuquimia-crampton)
+
 - [It’s Always a Good Year for IDM](https://tabularasarecords.substack.com/p/its-always-a-good-year-for-idm)
+
 - [The Oxonian Review | On Giving Up Academic Writing](https://oxonianreview.com/articles/on-giving-up-academic-writing)
+
 - [Tony Wood, Stricken Leviathans — Sidecar](https://newleftreview.org/sidecar/posts/stricken-leviathans)
+
 - [You Are Not Owed A Creative Career - by Jozef White](https://tabularasarecords.substack.com/p/you-are-not-owed-a-creative-career)
+
 - [The Art of DJing: Djrum · Artículo ? RA](https://es.ra.co/features/4403)
+
 - [Learning About Turntables: A Comprehensive Guide by DJ Bolivia](https://www.djbolivia.ca/turntables.html)
+
 - [Ética de Spinoza, propuesta sobre la felicidad](https://filco.es/etica-de-spinoza/)
+
 - [Music Criticism’s Lost Futures – xenogothic](https://xenogothic.com/2025/04/04/music-criticisms-lost-futures/)
+
 - [Writing - Poynter](https://www.poynter.org/courses/journalism-fundamentals-craft-values/lessons/essential-skills/topic/writing/)
+
 - [Intelligence Is More Than a Tool to Get Ahead - The Atlantic](https://www.theatlantic.com/family/archive/2023/03/intelligence-well-being-life-satisfaction-happiness/673476/)
+
 - [How to write a personal statement for Masters courses : Tips for applying to do a Masters at Sussex ](https://www.sussex.ac.uk/study/masters/apply/tips-for-masters/personal-statement)
+
 - [Sustainable Development MSc : University of Sussex](https://www.sussex.ac.uk/study/masters/courses/sustainable-development-msc)
+
 - [Where Will Our Food Come From? - Journal #129](https://www.e-flux.com/journal/129/484781/where-will-our-food-come-from/)
+
 - [Living in the Valley of Underdetermination - Journal #150](https://www.e-flux.com/journal/150/644343/living-in-the-valley-of-underdetermination/)
+
 - [Art in a Multipolar World: Problem Analysis and Horizons - Journal #150](https://www.e-flux.com/journal/150/645603/art-in-a-multipolar-world-problem-analysis-and-horizons/)
+
 - [Imperial Politics and Dominant Ideologies: The Origin, Development, and Future of Nationalist Moveme](https://www.e-flux.com/journal/150/645114/imperial-politics-and-dominant-ideologies-the-origin-development-and-future-of-nationalist-movements/)
+
 - [Housewives, Prostitutes, and Workers - Journal #151](https://www.e-flux.com/journal/151/652314/housewives-prostitutes-and-workers/)
+
 - [The Commune Form: A Conversation - Journal #151](https://www.e-flux.com/journal/151/651825/the-commune-form-a-conversation/)
+
 - [The Economic Possibilities of Lucid Dreaming - Journal #151](https://www.e-flux.com/journal/151/652100/the-economic-possibilities-of-lucid-dreaming/)
+
 - [The Ideal World - Journal #152](https://www.e-flux.com/journal/152/657538/the-ideal-world/)
+
 - [On the Unhappy Consciousness of Neoreactionaries - Journal #81](https://www.e-flux.com/journal/81/125815/on-the-unhappy-consciousness-of-neoreactionaries/)
+
 - [Bibliography on Niij, Ni-in, Aje, A domesticated insect which produces lacquer.](https://www.maya-art-books.org/Mayan-domesticated-animals-insects-Mexico-Guatemala/niij-Llaveia-axin-scale-insect-Achi-Mayan-bibliography-handicrafts-Rabinal-lacquer.html)
+
 - [Aje, insecto que podría extinguirse en pocos años](https://archivo.quadratin.com.mx/sucesos/Aje-insecto-que-podria-extinguirse-en-pocos-anos/)
+
 - [Perry Anderson, Idées-forces, NLR 151, January–February 2025](https://newleftreview.org/issues/ii151/articles/perry-anderson-idees-forces)
+
 - [Otro Paramo](https://www.otroparamo.com/web/articulo.php?ed=3&ar=490)
+
 - [The 100 Best Artworks of the 21st Century](https://www.artnews.com/list/art-news/news/100-best-artworks-21st-century-1234734225/)
+
 - [Jean Baudrillard](https://www.versobooks.com/blogs/authors/baudrillard-jean)
+
 - [?? Easiest Interview Preparation: Chevening](https://sirat.substack.com/p/easiest-interview-preparation-chevening-dba?utm_medium=web)
+
 - [Comienza segunda etapa de reconstrucción del Templo de Nurio, en Michoacán](https://www.inah.gob.mx/boletines/comienza-segunda-etapa-de-reconstruccion-del-templo-de-nurio-en-michoacan)
 - [Corcovada, el ejido en la mira de Salinas Pliego - Pie de Página](https://t.co/Z6rTqn4PTb)
 - [Elysia Crampton – Dissolution of the Sovereign: A Time Slide Into the Future (Or: A Non-Abled Offend](https://genius.com/Elysia-crampton-dissolution-of-the-sovereign-a-time-slide-into-the-future-or-a-non-abled-offenders-exercise-in-jurisprudence-lyrics)
