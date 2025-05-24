@@ -2,9 +2,7 @@
 En un ejercicio de transparencia 
 
 - [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968) timestamp: 1747795809 #article #saved #pocket
-
-![image](https://github.com/user-attachments/assets/7067ad4a-e44c-4656-a016-73b5e510f712)
-
+- 
 - [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
   
 - [Elysia Crampton: Beyond the horizon of coloniality | | Flash Art](https://flash---art.com/article/elysia-crampton-beyond-the-horizon-of-coloniality/)
