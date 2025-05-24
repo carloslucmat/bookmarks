@@ -2,7 +2,7 @@
 En un ejercicio de transparencia 
 
 - [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968) timestamp: 1747795809 #article #saved #pocket
-- 
+
 - [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
   
 - [Elysia Crampton: Beyond the horizon of coloniality | | Flash Art](https://flash---art.com/article/elysia-crampton-beyond-the-horizon-of-coloniality/)
@@ -249,4 +249,3 @@ En un ejercicio de transparencia
 - [Curso Tubería De Datos - Data Pipeline | Escuela de Datos](https://escueladedatos.online/curso/curso-tuberia-de-datos-data-pipeline/)
 - [Reflections on The Israeli-Palestinian Conflict – Humanity Journal](https://humanityjournal.org/blog/reflections-on-the-israeli-palestinian-conflict/)
 - [Tomorrow’s Myths - Serang Chung - A Story of Eight Cities](https://www.e-flux.com/architecture/tomorrows-myths/532302/a-story-of-eight-cities/)
-![image](https://github.com/user-attachments/assets/7883b688-b86b-400e-82f3-da4327735e71)
