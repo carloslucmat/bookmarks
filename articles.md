@@ -1,10 +1,6 @@
-- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
+- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968) Blog de Bryan Stevens con una gran colección de máscaras mexicanas y michoacanas ver [intro decorative masks](https://mexicandancemasks.com/?p=103#more-103) 
   Date: 2025-05-01
   Tags: antropología, máscaras, michoacán, fotos
-
-- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
-Date: 2025-10-31
-Tags: hola, como, estas
   
 - [Elysia Crampton: Beyond the horizon of coloniality | Flash Art](https://flash---art.com/article/elysia-crampton-beyond-the-horizon-of-coloniality/)
 Tags: entrevista, música 
@@ -18,27 +14,24 @@ Tags: entrevista, música
 - [It’s Always a Good Year for IDM](https://tabularasarecords.substack.com/p/its-always-a-good-year-for-idm)
   Tags: música, idm, entrevista
 
-- [The Oxonian Review | On Giving Up Academic Writing](https://oxonianreview.com/articles/on-giving-up-academic-writing)
+- [Tony Wood, Stricken Leviathans — Sidecar](https://newleftreview.org/sidecar/posts/stricken-leviathans) sobre el trabajo de C. Lomnitz y sus propuestas para entender la soberanía deshilachada mexicana
+  Tags: antropología, reseña, crítica 
 
-- [Tony Wood, Stricken Leviathans — Sidecar](https://newleftreview.org/sidecar/posts/stricken-leviathans)
+- [You Are Not Owed A Creative Career - by Jozef White](https://tabularasarecords.substack.com/p/you-are-not-owed-a-creative-career) comentario básico pero necesario sobre las formas de vidas creativas realistas
+  Tags: ensayo, vida
+  
 
-- [You Are Not Owed A Creative Career - by Jozef White](https://tabularasarecords.substack.com/p/you-are-not-owed-a-creative-career)
-
-- [The Art of DJing: Djrum · Artículo ? RA](https://es.ra.co/features/4403)
+- [The Art of DJing: Djrum · RA](https://es.ra.co/features/4403) felix manuel, battle-mode, contraste y textura
+  Tags: música, equipo, técnica
 
 - [Learning About Turntables: A Comprehensive Guide by DJ Bolivia](https://www.djbolivia.ca/turntables.html)
 
-- [Ética de Spinoza, propuesta sobre la felicidad](https://filco.es/etica-de-spinoza/)
-
 - [Music Criticism’s Lost Futures – xenogothic](https://xenogothic.com/2025/04/04/music-criticisms-lost-futures/)
 
-- [Writing - Poynter](https://www.poynter.org/courses/journalism-fundamentals-craft-values/lessons/essential-skills/topic/writing/)
-
-- [Intelligence Is More Than a Tool to Get Ahead - The Atlantic](https://www.theatlantic.com/family/archive/2023/03/intelligence-well-being-life-satisfaction-happiness/673476/)
+- [Writing - Poynter](https://www.poynter.org/courses/journalism-fundamentals-craft-values/lessons/essential-skills/topic/writing/) cursos de periodismo, reportaje, edición, etc
+  Tags: curso
 
 - [How to write a personal statement for Masters courses : Tips for applying to do a Masters at Sussex ](https://www.sussex.ac.uk/study/masters/apply/tips-for-masters/personal-statement)
-
-- [Sustainable Development MSc : University of Sussex](https://www.sussex.ac.uk/study/masters/courses/sustainable-development-msc)
 
 - [Where Will Our Food Come From? - Journal #129](https://www.e-flux.com/journal/129/484781/where-will-our-food-come-from/)
 
@@ -58,37 +51,51 @@ Tags: entrevista, música
 
 - [On the Unhappy Consciousness of Neoreactionaries - Journal #81](https://www.e-flux.com/journal/81/125815/on-the-unhappy-consciousness-of-neoreactionaries/)
 
-- [Bibliography on Niij, Ni-in, Aje, A domesticated insect which produces lacquer.](https://www.maya-art-books.org/Mayan-domesticated-animals-insects-Mexico-Guatemala/niij-Llaveia-axin-scale-insect-Achi-Mayan-bibliography-handicrafts-Rabinal-lacquer.html)
+- [Bibliography on Niij, Ni-in, Aje, A domesticated insect which produces lacquer.](https://www.maya-art-books.org/Mayan-domesticated-animals-insects-Mexico-Guatemala/niij-Llaveia-axin-scale-insect-Achi-Mayan-bibliography-handicrafts-Rabinal-lacquer.html) Sobre el aje, insecto necesario para la laca utilizada en artesanías que está en peligro de extinción
+  Tags: insecto, biblio
 
 - [Aje, insecto que podría extinguirse en pocos años](https://archivo.quadratin.com.mx/sucesos/Aje-insecto-que-podria-extinguirse-en-pocos-anos/)
 
-- [Perry Anderson, Idées-forces, NLR 151, January–February 2025](https://newleftreview.org/issues/ii151/articles/perry-anderson-idees-forces)
+- [Perry Anderson, Idées-forces, NLR 151, January–February 2025](https://newleftreview.org/issues/ii151/articles/perry-anderson-idees-forces) Y a todo esto, ¿será que las ideas mueven la historia?
+  Tags: historia, teoría, ensayo  
 
 - [Otro Paramo](https://www.otroparamo.com/web/articulo.php?ed=3&ar=490)
 
 - [The 100 Best Artworks of the 21st Century](https://www.artnews.com/list/art-news/news/100-best-artworks-21st-century-1234734225/)
 
-- [Jean Baudrillard](https://www.versobooks.com/blogs/authors/baudrillard-jean)
-
-- [?? Easiest Interview Preparation: Chevening](https://sirat.substack.com/p/easiest-interview-preparation-chevening-dba?utm_medium=web)
+- [Easiest Interview Preparation: Chevening](https://sirat.substack.com/p/easiest-interview-preparation-chevening-dba?utm_medium=web)
 
 - [Comienza segunda etapa de reconstrucción del Templo de Nurio, en Michoacán](https://www.inah.gob.mx/boletines/comienza-segunda-etapa-de-reconstruccion-del-templo-de-nurio-en-michoacan)
-- [Corcovada, el ejido en la mira de Salinas Pliego - Pie de Página](https://t.co/Z6rTqn4PTb)
-- [Elysia Crampton – Dissolution of the Sovereign: A Time Slide Into the Future (Or: A Non-Abled Offend](https://genius.com/Elysia-crampton-dissolution-of-the-sovereign-a-time-slide-into-the-future-or-a-non-abled-offenders-exercise-in-jurisprudence-lyrics)
+  
+- [Corcovada, el ejido en la mira de Salinas Pliego - Pie de Página](https://t.co/Z6rTqn4PTb) Escuché sobre este caso y me pareció interesante ver cómo la vida de un ejido, de la propiedad y su organización, sus presonas, viven un proceso de este tipo
+  Tags: reportaje, ejido 
+
+- [Elysia Crampton – Dissolution of the Sovereign: A Time Slide Into the Future (Or: A Non-Abled Offend](https://genius.com/Elysia-crampton-dissolution-of-the-sovereign-a-time-slide-into-the-future-or-a-non-abled-offenders-exercise-in-jurisprudence-lyrics) gran poema-épica andino futurista
+  
 - [Forest carbon offsets are a tool, not a silver bullet (commentary)](https://news.mongabay.com/2023/02/forest-carbon-offsets-are-a-tool-not-a-silver-bullet-commentary/)
-- [Towards Conservation Impact Evaluation 2.0 - CIFOR-ICRAF Forests News](https://forestsnews.cifor.org/50603/towards-conservation-impact-evaluation-2-0?fnl=en)
+
 - [From promise to reality: The uneven impacts of REDD+ - CIFOR-ICRAF Forests News](https://forestsnews.cifor.org/89698/the-broad-picture-redd-had-moderate-variable-impacts?fnl=en)
+
 - [Carbon credits from forest conservation exaggerate impact of ill-targeted REDD+ projects - CIFOR-ICR](https://forestsnews.cifor.org/84628/carbon-credits-from-forest-conservation-exaggerate-impact-of-low-quality-redd-projects?fnl=en)
-- [Claudia Sheinbaum y Omar García Harfuch en Ciudad de México, el 3 de diciembre de 2024 .](https://elpais.com/mexico/2025-02-14/sheinbaum-busca-consolidar-y-centralizar-los-superpoderes-de-harfuch-en-seguridad-e-inteligencia.html)
+
 - [How to have a child in the digital age](https://t.co/GFEQPX4fGm)
+
 - [Una apuesta por el riesgo - Revista Anfibia](https://www.revistaanfibia.com/una-apuesta-por-el-riesgo-las-claves-de-la-escritura-anfibia/)
+
 - [Publicaciones - Red LATAM de Jóvenes Periodistas](https://jovenesperiodistas.org/publicaciones/)
+  
 - [Pollita en Fuga: Silvina, de 15 años habla desde la clandestinidad - LA NACION](https://www.lanacion.com.ar/espectaculos/pollita-en-fuga-silvina-de-15-anos-habla-desde-la-clandestinidad-nid582577/)
+
 - [Josefina Licitra | RevistaOrsai](https://revistaorsai.com/category/escritores/josefina-licitra/)
+
 - [7 ideas for writing blog posts - Poynter](https://www.poynter.org/reporting-editing/2017/7-ideas-for-writing-blog-posts/)
+
 - [The best Pulitzer leads (or ledes) in 2024 - Poynter](https://www.poynter.org/reporting-editing/2024/the-best-pulitzer-leads-or-ledes-in-2024/)
+
 - [From Journalism to Grant Writing - Poynter](https://www.poynter.org/reporting-editing/2009/from-journalism-to-grant-writing/)
+
 - [Fifty Writing Tools: Quick List - Poynter](https://www.poynter.org/reporting-editing/2006/fifty-writing-tools-quick-list/)
+
 - [Writing Tool #13: Show and Tell - Poynter](https://www.poynter.org/reporting-editing/2004/writing-tool-13-show-and-tell/)
 - [The case against collocations, word pairs that stifle creativity | NPR Training](https://training.npr.org/2021/06/28/the-case-against-collocations-word-pairs-that-stifle-creativity/)
 - [Imaginando la historia - Radio Ambulante](https://radioambulante.org/escuela-radio-ambulante/imaginando-la-historia)
