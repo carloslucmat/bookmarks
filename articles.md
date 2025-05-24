@@ -1,9 +1,11 @@
 ## Catador de lixo por CLM
 En un ejercicio de transparencia 
 
-- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968) timestamp: 1747795809 #article #saved #pocket
+- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
+Date: 1747795809
+#article #saved #pocket
 
-- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968) date: 2025-10-31 tags: hola, como, estas
+- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968) Date: 2025-10-31 Tags: hola, como, estas
   
 - [Elysia Crampton: Beyond the horizon of coloniality | | Flash Art](https://flash---art.com/article/elysia-crampton-beyond-the-horizon-of-coloniality/)
 
