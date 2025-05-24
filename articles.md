@@ -1,19 +1,22 @@
-## Catador de lixo por CLM
-En un ejercicio de transparencia 
+- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
+  Date: 2025-05-01
+  Tags: antropología, máscaras, michoacán, fotos
 
 - [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968)
-Date: 1747795809
-#article #saved #pocket
-
-- [Corcoví and Tecolote Masks from the Danza de los Viejos | Mexican Dance Masks](https://mexicandancemasks.com/?p=10968) Date: 2025-10-31 Tags: hola, como, estas
+Date: 2025-10-31
+Tags: hola, como, estas
   
-- [Elysia Crampton: Beyond the horizon of coloniality | | Flash Art](https://flash---art.com/article/elysia-crampton-beyond-the-horizon-of-coloniality/)
+- [Elysia Crampton: Beyond the horizon of coloniality | Flash Art](https://flash---art.com/article/elysia-crampton-beyond-the-horizon-of-coloniality/)
+Tags: entrevista, música 
 
 - [Elysia Crampton and the Art of Survival](https://www.vice.com/en/article/elysia-crampton-interview-demon-city/)
+  Tags: música, entrevista
 
 - [Chuquimamani-Condori and Joshua Chuquimia Crampton: Q'iwanakaxa/Q'iwsanakaxa Utjxiwa (Cacique apoder](https://www.momaps1.org/en/programs/183-chuquimamani-condori-and-joshua-chuquimia-crampton)
+  Tags: exposición, arte
 
 - [It’s Always a Good Year for IDM](https://tabularasarecords.substack.com/p/its-always-a-good-year-for-idm)
+  Tags: música, idm, entrevista
 
 - [The Oxonian Review | On Giving Up Academic Writing](https://oxonianreview.com/articles/on-giving-up-academic-writing)
 
